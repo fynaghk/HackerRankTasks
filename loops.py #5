@@ -1,0 +1,10 @@
+a = input()
+number = int(a)
+counter = 0
+i = 0
+
+if (number <= 20 and number >= 1):
+    while i < number:
+       print(i*i)
+       i += 1
+
