@@ -1,0 +1,6 @@
+a = input()
+b = input()
+number1 = int(a)
+number2 = int(b)
+print(number1 // number2)
+print(number1 / number2)
