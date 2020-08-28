@@ -1,0 +1,11 @@
+number1 = input()
+number2 = input()
+newNumber1 = int(number1)
+newNumber2 = int(number2)
+a = (newNumber1 + newNumber2)
+b = (newNumber1 - newNumber2)
+c = (newNumber1 * newNumber2)
+if (newNumber1 <= 10 ** 10 and newNumber2 <= 10 ** 10):
+    print(a)
+    print(b)
+    print(c)
