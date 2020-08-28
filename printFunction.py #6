@@ -1,0 +1,7 @@
+number = input()
+Number = int(number)
+counter = 1
+if (Number>=1 and Number<=150):
+       while(counter!=Number+1):
+           print(counter, end="")
+           counter += 1
