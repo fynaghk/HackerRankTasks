@@ -1,0 +1,9 @@
+number1 = int(input())
+number2 = int(input())
+number3 = int(input())
+if (number1 >= 1 and number1 <= 10):
+    if (number2 >= 1 and number2 <= 10):
+        if (number3 >= 2 and number3 <= 1000):
+            print(number1 ** number2)
+            print(number1 ** number2 % number3)
+
