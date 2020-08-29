@@ -1,0 +1,9 @@
+number1 = int(input())
+number2 = int(input())
+first = number1 // number2
+second = number1 % number2
+print(first)
+print(second)
+print("(", end="")
+print(first, end=', ')
+print(second, end=')')
