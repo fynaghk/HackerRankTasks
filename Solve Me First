@@ -1,0 +1,9 @@
+def solveMeFirst():
+    num1 = int(input())
+    num2 = int(input())
+    res = num1 + num2
+    return res
+
+
+res = solveMeFirst()
+print(res)
