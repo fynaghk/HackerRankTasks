@@ -1,0 +1,7 @@
+size = input()
+sum = 0
+numbers = map(int, input().split(" "))
+
+for number in numbers:
+    sum += number
+print(sum)
