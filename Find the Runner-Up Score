@@ -1,0 +1,15 @@
+arrNew = []
+size = int(input())
+
+numbers = map(int, input().split(" "))
+
+for num in numbers:
+    if num not in arrNew:
+        arrNew.append(num)
+
+arrNew.sort()
+count = 0
+for number in numbers:
+    count += 1
+
+print(arrNew[count - 2])
