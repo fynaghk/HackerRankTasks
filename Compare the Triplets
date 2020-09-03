@@ -1,0 +1,26 @@
+numbers1 = map(int, input().split(" "))
+numbers2 = map(int, input().split(" "))
+count1 = 0
+count2 = 0
+newList1 = []
+newList2 = []
+
+for number in numbers1:
+    newList1.append(number)
+
+for number in numbers2:
+    newList2.append(number)
+if (newList2[0] > newList1[0]):
+    count2 += 1
+if (newList2[1] > newList1[1]):
+    count2 += 1
+if (newList2[2] > newList1[2]):
+    count2 += 1
+if (newList2[0] < newList1[0]):
+    count1 += 1
+if (newList2[1] < newList1[1]):
+    count1 += 1
+if (newList2[2] < newList1[2]):
+    count1 += 1
+
+print(count1,count2)
