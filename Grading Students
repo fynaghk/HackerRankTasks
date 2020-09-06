@@ -1,0 +1,24 @@
+number = int(input())
+students = ""
+for grade in range(number):
+    grade = int(input())
+    if (grade < 38):
+        students += str(grade) + " "
+
+    elif (grade % 5 == 0 or grade == 0):
+        students += str(grade) + " "
+
+    for num in range(40, 105, 5):
+        if (num - grade == 2):
+            newGrade = grade + 2
+            students += str(newGrade) + " "
+
+        elif (num - grade == 1):
+            newGrade = grade + 1
+            students += str(newGrade) + " "
+
+        elif (num - grade > 2 and num - grade < 5 and not grade<=40 ):
+            students += str(grade) + " "
+
+for _ in students.split(" "):
+    print(_)
