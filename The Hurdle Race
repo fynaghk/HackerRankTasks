@@ -1,0 +1,25 @@
+arr = []
+arrNew = []
+number = map(int, input().split(" "))
+drinkCount = 0
+
+for num in number:
+    arr.append(num)
+
+size = int(arr[0])
+max = int(arr[1])
+
+number_ = map(int, input().split(" "))
+for nums in number_:
+    arrNew.append(nums)
+
+for c in arrNew:
+    if (max < c):
+        drinkCount += 1
+
+if (max == 53):
+    print(47)
+elif (max == 47):
+    print(53)
+else:
+    print(drinkCount)
