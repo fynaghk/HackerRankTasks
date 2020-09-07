@@ -1,0 +1,26 @@
+arr = []
+arrNew = []
+arrNew2 = []
+count = 0
+
+user = map(int, input().split(" "))
+for num in user:
+    arr.append(num)
+
+k = arr[2]
+
+for numberNew in range(arr[0], arr[1] + 1):
+    arrNew2.append(numberNew)
+    num = numberNew
+    reversed_ = 0
+    while num != 0:
+        r = int(num % 10)
+        reversed_ = reversed_ * 10 + r
+        num = int(num // 10)
+    arrNew.append(reversed_)
+
+for i in range(len(arrNew)):
+    if (abs(arrNew[i] - arrNew2[i]) % k == 0):
+        count += 1
+
+print(count)
