@@ -1,0 +1,12 @@
+def clock(user):
+    if user[-2:] == "AM" and user[:2] == "12":
+        return "00" + user[2:-2]
+    elif user[-2:] == "AM":
+        return user[:-2]
+    elif user[-2:] == "PM" and user[:2] == "12":
+        return user[:-2]
+    else:
+        return str(int(user[:2]) + 12) + user[2:8]
+
+user = input()
+print(clock(user))
