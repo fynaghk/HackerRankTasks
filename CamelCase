@@ -1,0 +1,6 @@
+user = input()
+answer = []
+for char in user:
+    if char.isupper():
+        answer.append(char)
+print(len(answer)+1)
