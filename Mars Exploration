@@ -1,0 +1,15 @@
+user = input()
+arr = []
+count = 0
+for ch in user:
+    arr.append(ch)
+
+for i in range(2, len(arr), 3):
+    if (arr[i - 2] != "S"):
+        count += 1
+    if (arr[i - 1] != "O"):
+        count += 1
+    if (arr[i] != "S"):
+        count += 1
+
+print(count)
