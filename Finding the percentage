@@ -1,0 +1,18 @@
+loopCount = int(input())
+arr = []
+myDict = {}
+
+for nameAndGrade in range(loopCount):
+    nameAndGrade = input().split()
+    arr.append(nameAndGrade)
+
+userName = input()
+
+for name, grade1, grade2, grade3 in arr:
+    ortalama = (float(grade1) + float(grade2) + float(grade3)) / 3
+    myDict.update({name: ortalama})
+
+for name_ in myDict:
+    if (name_ ==userName):
+        ortalama  =  myDict[name_]
+        print("{:.2f}".format(ortalama))
