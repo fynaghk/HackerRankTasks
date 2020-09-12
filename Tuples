@@ -1,0 +1,9 @@
+num = int(input())
+arr = map(int, input().split(" "))
+array = []
+
+for i in arr:
+    array.append(i)
+t = tuple(array)
+
+print(hash(t))
