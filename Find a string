@@ -1,7 +1,7 @@
 def count_substring(string, sub_string):
     answer = 0
-    for i in range(len(string)):
-        if string[i:].startswith(sub_string):
+    for character in range(len(string)):
+        if string[character:].startswith(sub_string):
             answer += 1
     return answer
 
