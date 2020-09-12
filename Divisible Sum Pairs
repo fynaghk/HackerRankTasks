@@ -1,0 +1,15 @@
+size, div = input().split(" ")
+arr = map(int, input().split(" "))
+count = 0
+array = []
+
+for i in arr:
+    array.append(i)
+
+for ch in range(int(size)):
+    for ch2 in range(int(size)):
+        if (ch) != (ch2):
+            if (array[ch] + array[ch2]) % int(div) == 0:
+                count += 1
+
+print(count//2)
