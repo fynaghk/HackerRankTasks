@@ -1,0 +1,18 @@
+size, anna = input().split(" ")
+arr = input().split(" ")
+charged = int(input())
+array = []
+sum = 0
+
+for i in arr:
+    array.append(int(i))
+
+for character in array:
+    sum = sum + character
+
+sumEnd = sum - array[int(anna)]
+ans=charged - sumEnd // 2
+if ans !=0:
+    print(ans)
+else:
+    print("Bon Appetit")
