@@ -1,0 +1,43 @@
+def isAlnum(user):
+    for character in user:
+        if character.isalnum():
+            return True
+    else:
+        return False
+
+
+def isAlpha(user):
+    for character in user:
+        if character.isalpha():
+            return True
+    else:
+        return False
+
+def isDigit(user):
+    for character in user:
+        if character.isdigit():
+            return True
+    else:
+        return False
+
+def isLower(user):
+    for character in user:
+        if character.islower():
+            return True
+    else:
+        return False
+
+def isUpper(user):
+    for character in user:
+        if character.isupper():
+            return True
+    else:
+        return False
+
+user = input()
+print(isAlnum(user))
+print(isAlpha(user))
+print(isDigit(user))
+print(isLower(user))
+print(isUpper(user))
+
